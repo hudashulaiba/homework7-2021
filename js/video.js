@@ -78,6 +78,14 @@ document.querySelector('#slider').addEventListener("change", function() {
 
 //HW REQUIREMENT 8
 // Styled: Utilize the existing oldSchool class on the video element
+document.querySelector("#vintage").addEventListener("click", function() {
+	video.classList.add("oldSchool")
+	console.log("Old School style added")
+})
 
 //HW REQUIREMENT 9
 // Original: Remove the oldSchool class from the video.
+document.querySelector("#orig").addEventListener("click", function() {
+	video.classList.remove("oldSchool")
+	console.log("Old School style removed")
+})
