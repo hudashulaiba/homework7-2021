@@ -56,7 +56,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 //HW REQUIREMENT 6
 // Mute: Mute/unmute the video and update the text in the button.
 document.querySelector("#mute").addEventListener("click", function() {
-	if (video.muted === true) {
+	if (video.muted == true) {
 		video.muted = false;
 		console.log("Muted");
 		document.querySelector("#mute").innerHTML = "Mute";
