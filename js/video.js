@@ -56,15 +56,15 @@ document.querySelector("#skip").addEventListener("click", function() {
 //HW REQUIREMENT 6
 // Mute: Mute/unmute the video and update the text in the button.
 document.querySelector("#mute").addEventListener("click", function() {
-	if (video.muted == true) {
+	if (video.muted == false) {
+		video.muted = true;
+		console.log("Unmuted");
+		document.querySelector("#mute").innerHTML = "Unmute";
+	}
+	else { 
 		video.muted = false;
 		console.log("Muted");
 		document.querySelector("#mute").innerHTML = "Mute";
-	}
-	else {
-		video.muted = false;
-		console.log("Unmuted");
-		document.querySelector("#mute").innerHTML = "Unmute";
 	}
 });
 
